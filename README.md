@@ -16,10 +16,13 @@ You must have Java SE 17 or higher installed correctly on your computer. Verify 
 
 ## Use Cases :bulb:
 
-1. Code Review: Quickly generate a single file containing all the Java code in a project, making it easier to share and review the code with your team members.
-2. Documentation: Generate a comprehensive code file to include in your project documentation, providing a complete overview of the codebase.
-3. Backup: Create a single file backup of your Java project's source code, making it easier to store and manage.
-4. Code Analysis: Generate a single file containing all the Java code in a project, making it easier to perform static code analysis or search for specific patterns or issues.
+1. Learning & Teaching: For educators and students, compiling all the .java files into one file can help in reading and sharing the code in different applications.
+2. Code Portability for Coding Assistance: Share and send your entire Project's Java source code to a teacher, tutor, or even an AI coding assistant like GitHub Copilot Chat. No need to work with multiple files at a time when exchanging source code. 
+3. Code Metrics: By collating all the .java files, developers can run metrics on the whole project (e.g., lines of code, number of methods/classes) to get an overview of the code's size and complexity.
+4. Quick Project Overview and Summarization: Quickly produces a single file containing all the Java code in a project, making it easier to share and review the code with your team members. For developers who want a snapshot of what's happening in the entire codebase, a single file can provide a fast overview, especially if the developer is new to the project. A single text view can be more easily summarized by various AI services as well for getting up to speed.
+5. Integration with Other Tools: This utility could be integrated with other tools to provide features like code formatting, highlighting, or even converting the code into different output formats (e.g., PDF).
+6. Audit & Compliance: For organizations and individuals that need to review code for compliance with certain standards, having a consolidated view can simplify the audit process.
+7. Simple Text Backup: Create a single Text file backup of your Java project's source code, like a snapshot in time. Note, however, it currently ONLY saves .java files. 
 
 ## License :scroll: 
 
