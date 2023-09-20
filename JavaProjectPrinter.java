@@ -12,9 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This program creates a text file print out of all code files from an entire
- * Java Project, recursively scanning all subdirectories too for source code,
- * writing/appending the contents of all .java files to a single text file.
+ * This program uses Recursion to scan a Java Project's directory tree,
+ * appending all Java source code files to a single text file called "code.txt"
  */
 public class JavaProjectPrinter {
 
