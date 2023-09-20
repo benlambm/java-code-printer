@@ -21,8 +21,8 @@ public class JavaProjectPrinter {
     private List<String> codeLines = new ArrayList<>();
     {
     	codeLines.add("Thank you for using JavaProjectPrinter - Version 0.0.1");
-    	codeLines.add("Author: benlamb@vt.edu ");
-    	codeLines.add("GitHub repo: "  );
+    	codeLines.add("Author: benlambm - benlamb@vt.edu");
+    	codeLines.add("GitHub repo: https://github.com/benlambm/java-project-printer");
     }
 
 
