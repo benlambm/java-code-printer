@@ -1,5 +1,5 @@
 # java-code-printer :coffee: :page_facing_up: 
-This repository contains a Java utility named JavaProjectPrinter that helps in scanning and collating the content of all .java files in a given directory and its subdirectories into a single text file. This project is open-source and licensed under the MIT License, which means you are free to use, modify, and distribute the code as you wish, as long as you include the original copyright and license notice in any copy of the software/source. I welcome contributions through pull requests and encourage you to report any issues on the Issues board.
+This repository contains a Java utility named JavaCodePrinter that helps in scanning and collating the content of all .java files in a given directory and its subdirectories into a single text file. This project is open-source and licensed under the MIT License, which means you are free to use, modify, and distribute the code as you wish, as long as you include the original copyright and license notice in any copy of the software/source. I welcome contributions through pull requests and encourage you to report any issues on the Issues board.
 
 ## Usage :rocket:
 To use the program, simply copy and paste the file JavaProjectPrinter.java into your desired Java project folder. Then, open any Terminal app at that location and execute the following command:
