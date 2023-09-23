@@ -8,7 +8,7 @@ To use the program, simply copy and paste the file JavaProjectPrinter.java into 
 
 This command will run the program, and you should see the collated content of all .java files in a new file named "code.txt" in the same directory.
 
-Alternatively, you can open and Run the file in any IDE of your choice. Just copy the JavaProjectPrinter.java file anywhere in your Project and run it. 
+Alternatively, you can open and Run the file in any IDE of your choice. Just copy the JavaCodePrinter.java file anywhere in your Project and run it. 
 
 ## System Requirements :coffee:
 
