@@ -15,13 +15,13 @@ import java.util.List;
  * This program uses Recursion to scan a Java Project's directory tree,
  * appending all Java source code files to a single text file called "code.txt"
  */
-public class JavaProjectPrinter {
+public class JavaCodePrinter {
 
     private List<String> codeLines = new ArrayList<>();
     {
-    	codeLines.add("Thank you for using JavaProjectPrinter - Version 0.0.1");
+    	codeLines.add("Thank you for using JavaCodePrinter - Version 0.0.2");
     	codeLines.add("Author: benlambm - benlamb@vt.edu");
-    	codeLines.add("GitHub repo: https://github.com/benlambm/java-project-printer");
+    	codeLines.add("GitHub repo: https://github.com/benlambm/java-code-printer");
     }
 
 
@@ -96,9 +96,9 @@ public class JavaProjectPrinter {
     
     
     public static void main(String[] args) throws IOException {
-        JavaProjectPrinter jpp = new JavaProjectPrinter();
-        List<String> output = jpp.scanProjectFiles(Paths.get(System.getProperty("user.dir"))); 
-        jpp.writeFileContents(output);
+        JavaCodePrinter jcp = new JavaCodePrinter();
+        List<String> output = jcp.scanProjectFiles(Paths.get(System.getProperty("user.dir"))); 
+        jcp.writeFileContents(output);
     }
     
 }
