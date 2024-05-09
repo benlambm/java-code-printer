@@ -1,13 +1,12 @@
-package edu.vwcc.recursion;
+package algorithms;
+
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryIteratorException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +45,11 @@ public class JavaCodePrinter {
                 } 
                 // Base Case: 
                 else if (filePath.toString().endsWith(".java")) {
-                    
+                	// skip this JavaCodePrinter.java file
+                	if (filePath.toString().endsWith("JavaCodePrinter.java")) {
+                		continue;
+                	}
+                	
                     // Get the size of the file for informational purposes
                     long size = Files.size(filePath);
                     String fileInfo = filePath.toAbsolutePath() + ": " + size + " bytes\n";
