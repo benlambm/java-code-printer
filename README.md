@@ -139,6 +139,3 @@ Please ensure your code adheres to the project's coding standards and include ap
 - **Author:** Ben Lamb (benlamb@vt.edu)
 - **GitHub Repo:** [https://github.com/benlambm/java-code-printer](https://github.com/benlambm/java-code-printer)
 
----
-
-Feel free to customize this `README.md` further to suit your preferences or provide additional information.
