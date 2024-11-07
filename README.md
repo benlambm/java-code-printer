@@ -1,33 +1,144 @@
-# java-code-printer :coffee: :page_facing_up: 
-This repository contains a Java utility named JavaCodePrinter that helps in scanning and collating the content of all .java files in a given directory and its subdirectories into a single text file. This project is open-source and licensed under the MIT License, which means you are free to use, modify, and distribute the code as you wish, as long as you include the original copyright and license notice in any copy of the software/source. I welcome contributions through pull requests and encourage you to report any issues on the Issues board.
+# JavaCodePrinter :coffee: :page_facing_up:
+
+**JavaCodePrinter** is a Java utility that scans a specified directory and its subdirectories for `.java` files, collating their contents into a single text file. This tool is particularly useful for developers, educators, and students who need to consolidate Java source code for analysis, sharing, or archiving purposes.
+
+This project is open-source and licensed under the MIT License, allowing you to use, modify, and distribute the code as you wish, provided you include the original copyright.
+
+We welcome contributions through pull requests and encourage you to report any issues on the Issues board.
+
+## Table of Contents
+
+- [Usage](#usage-printer-rocket)
+- [System Requirements](#system-requirements-coffee)
+- [Use Cases](#use-cases-bulb)
+- [License](#license-scroll)
+- [Contributing](#contributing-handshake)
 
 ## Usage :printer: :rocket:
-To use the program, simply copy and paste the file JavaCodePrinter.java into your desired Java project folder. Then, open any Terminal app at that location and execute the following command:
 
-`java JavaCodePrinter.java`
+### Prerequisites
 
-This command will run the program, and you should see the collated content of all .java files in a new file named "code.txt" in the same directory.
+- **Java SE 17** or higher installed on your computer.
+  - Verify your Java version by running `java --version` in your terminal.
 
-Alternatively, you can open and Run the file in any IDE of your choice. Just copy the JavaCodePrinter.java file anywhere in your Project and run it. 
+### Compiling the Program
+
+1. **Clone or Download** the repository to your local machine.
+
+2. **Navigate** to the directory containing `JavaCodePrinter.java` in your terminal.
+
+3. **Compile** the Java file using the following command:
+
+   ```bash
+   javac JavaCodePrinter.java
+   ```
+
+   This will generate a `JavaCodePrinter.class` file in the same directory.
+
+### Running the Program
+
+By default, the program scans the current working directory and its subdirectories, excluding certain directories like `build`, `test`, and `.git`. It collates all `.java` files into a single text file named `code.txt`.
+
+#### Running from the Current Directory
+
+To run the program from the directory containing the `JavaCodePrinter.class` file:
+
+```bash
+java JavaCodePrinter
+```
+
+To specify a custom output file name, provide it as an argument:
+
+```bash
+java JavaCodePrinter output_filename.txt
+```
+
+#### Running from Anywhere Using Environment Variables
+
+To run `JavaCodePrinter` from any directory in your terminal, you can add its location to your system's environment variables.
+
+##### Steps:
+
+1. **Add the Directory to CLASSPATH**
+
+   - **On Windows:**
+
+     ```cmd
+     set CLASSPATH=%CLASSPATH%;C:\path\to\directory
+     ```
+
+   - **On Unix/Linux/MacOS:**
+
+     ```bash
+     export CLASSPATH=$CLASSPATH:/path/to/directory
+     ```
+
+   Replace `C:\path\to\directory` or `/path/to/directory` with the actual path to the directory containing `JavaCodePrinter.class`.
+
+2. **Move the Class File to a Common Directory (Optional)**
+
+   Alternatively, you can place the `JavaCodePrinter.class` file in a directory that's already included in your `CLASSPATH`.
+
+3. **Run the Program from Any Location**
+
+   Now, you can run `JavaCodePrinter` from any directory:
+
+   ```bash
+   java JavaCodePrinter
+   ```
+
+   Remember that the program operates on the current working directory from which it is run.
+
+### Notes
+
+- **Excluding Directories:** The program automatically excludes certain common directories to prevent including unwanted files, such as compiled classes or test suites.
+- **Charset Specification:** The program uses UTF-8 encoding when reading and writing files to ensure proper handling of special characters.
+- **Progress Indicators:** The program displays progress in the console, showing the number of files processed and lines of code.
+- **Data Summary:** At the end of processing, the program outputs a summary of the total number of Java files and lines of code.
 
 ## System Requirements :coffee:
 
-You must have Java SE 17 or higher installed correctly on your computer. Verify if needed by running the `java --version` command.
+- **Java SE 17** or higher installed on your computer.
+- Works on Windows, macOS, and Linux systems.
 
 ## Use Cases :bulb:
-_Disclaimer_ Always consider the privacy and security implications of sharing/exchanging an entire project's source code online. Only use for Personal or Open-Source Projects!!
-1. __Learning & Teaching__: For educators and students, compiling all the .java files into one file can help in reading and sharing the code in different applications.
-2. __Code Portability for Coding Assistance__: Share and send your entire Project's Java source code to a teacher, tutor, or even an AI coding assistant. No need to try to copy multiple files at a time when exchanging source code. 
-3. __Easier Code Metrics__: By collating all the .java files, developers can run metrics on the whole project (e.g., lines of code, number of methods/classes) to get an overview of the code's size and complexity.
-4. __Quick Project Overview and Summarization__: Quickly produces a single file containing all the Java code in a project, making it easier to share and review the code with your team members. For developers who want a snapshot of what's happening in the entire codebase, a single file can provide a fast overview, especially if the developer is new to the project. A single text view can be more easily summarized by various AI services as well for getting up to speed.
-5. __Integration with Other Tools__: This utility could be integrated with other tools to provide features like code formatting, highlighting, or even converting the code into different output formats (e.g., PDF).
-6. __Audit & Compliance__: For organizations and individuals that need to review code for compliance with certain standards, having a consolidated view can simplify the audit process.
-7. __Simple Text Backup__: Create a single Text file backup of your Java project's source code, like a snapshot in time. Note, however, it currently ONLY saves .java files. 
 
-## License :scroll: 
+1. **Learning & Teaching:** Educators and students can compile all `.java` files into one file for easier reading, sharing, and analysis.
 
-This project is licensed under the MIT License. The MIT License is a permissive open-source software license that allows you to use, modify, and distribute the code as you wish, as long as you include the original copyright and license notice in any copy of the software/source. This encourages collaboration and sharing of knowledge, making it a great choice for educational purposes.
+2. **Code Portability for Assistance:** Easily share your entire Java project's source code with a teacher, tutor, or AI coding assistant without managing multiple files.
 
-## Contributing :handshake: 
+3. **Easier Code Metrics:** Run metrics on the whole project (e.g., lines of code, number of methods/classes) to get an overview of the code's size and complexity.
 
-We welcome contributions to this project! If you have a feature request, bug report, or want to improve the code, please feel free to open an issue on the Issues bo
+4. **Quick Project Overview:** Produce a single file containing all the Java code, making it easier to review the codebase, especially for new team members.
+
+5. **Integration with Other Tools:** Integrate with tools that require a single source file for features like code formatting, highlighting, or converting to different formats (e.g., PDF).
+
+6. **Audit & Compliance:** Simplify the audit process by providing a consolidated view of the code for compliance checks.
+
+7. **Simple Text Backup:** Create a single text file backup of your Java project's source code as a snapshot in time.
+
+## License :scroll:
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code, provided you include the original license notice in any copy of the software/source.
+
+## Contributing :handshake:
+
+We welcome contributions to this project! If you have a feature request, bug report, or want to improve the code, please feel free to:
+
+- **Open an Issue:** Use the [Issues board](https://github.com/yourusername/java-code-printer/issues) to report bugs or suggest features.
+- **Submit a Pull Request:** Fork the repository, make your changes, and submit a pull request for review.
+
+Please ensure your code adheres to the project's coding standards and include appropriate documentation and tests.
+
+---
+
+**Thank you for using JavaCodePrinter!** If you find this tool helpful, please consider starring the repository and sharing it with others.
+
+# Contact
+
+- **Author:** Ben Lamb (benlamb@vt.edu)
+- **GitHub Repo:** [https://github.com/benlambm/java-code-printer](https://github.com/benlambm/java-code-printer)
+
+---
+
+Feel free to customize this `README.md` further to suit your preferences or provide additional information.
