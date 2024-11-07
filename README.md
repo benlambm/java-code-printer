@@ -125,7 +125,7 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 
 We welcome contributions to this project! If you have a feature request, bug report, or want to improve the code, please feel free to:
 
-- **Open an Issue:** Use the [Issues board](https://github.com/yourusername/java-code-printer/issues) to report bugs or suggest features.
+- **Open an Issue:** Use the [Issues board](https://github.com/benlambm/java-code-printer/issues) to report bugs or suggest features.
 - **Submit a Pull Request:** Fork the repository, make your changes, and submit a pull request for review.
 
 Please ensure your code adheres to the project's coding standards and include appropriate documentation and tests.
